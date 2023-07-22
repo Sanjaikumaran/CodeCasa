@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Watch</title>
+    <link rel="icon" href="assets/img/logo.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/component.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div class="clock">
+        <div class="second"></div>
+        <div class="minute"></div>
+        <div class="hour"></div>
+
+        <div class="dot"></div>
+
+        <script>
+          var dialLines = document.getElementsByClassName("lines");
+          var clockEl = document.getElementsByClassName("clock")[0];
+
+          for (var i = 0; i < 60; i++) {
+            document.write("<div class='lines'></div>");
+          }
+          for (let i = 0; i < 60; i++) {
+            dialLines[i].style.transform = "rotate(" + 6 * i + "deg)";
+          }
+        </script>
+
+        <div>
+          <span class="h3">3</span>
+          <span class="h6">6</span>
+          <span class="h9">9</span>
+          <span class="h12">12</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      setInterval("clock()", 100);
+    </script>
+  </body>
+</html>

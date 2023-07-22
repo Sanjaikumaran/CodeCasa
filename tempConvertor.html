@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperatur Convertor</title>
+    <link rel="icon" href="assets/img/logo.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/component.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Temperature Convertor</h1>
+      <div>
+        <div>
+          <label for="box">Celsius</label>
+          <input
+            onclick="this.select()"
+            onchange="convert('box1')"
+            onkeyup="convert('box1')"
+            type="number"
+            name="box"
+            placeholder="Celsius"
+            value="0" />
+        </div>
+        <div>
+          <label for="box">Fahrenheit</label>
+          <input
+            onclick="this.select()"
+            onchange="convert('box2')"
+            onkeyup="convert('box2')"
+            type="number"
+            name="box"
+            placeholder="Fahrenheit"
+            value="32" />
+        </div>
+        <div>
+          <label for="box">Kelvin</label>
+          <input
+            onclick="this.select()"
+            onkeyup="convert('box3')"
+            onchange="convert('box3')"
+            type="number"
+            name="box"
+            placeholder="Kelvin"
+            value="273.15" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
